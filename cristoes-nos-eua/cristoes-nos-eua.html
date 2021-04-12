@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Exercício 02 - Lista 2</title>
+
+    <script
+      src="https://kit.fontawesome.com/6bcad29309.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nav">
+      <h1>
+        <img
+          src="https://cdn.britannica.com/47/6847-050-075C3C65/Flag-Brazil.jpg"
+          alt="bandeira br"
+          width="45px"
+        />
+        Missão Inglês Nos <span style="color: #00f">E</span
+        ><span style="color: #f00">U</span><span style="color: #fff">A</span>
+        <img
+          src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
+          alt="bandeira eua"
+          width="45px"
+        />
+      </h1>
+      <i class="fas fa-bible fa-5x"></i>
+    </header>
+    <div class="container">
+      <div class="titulo">
+        <h1 class="rotulo">Cadastro de Cristão</h1>
+        <i class="fas fa-cross fa-lg"></i>
+      </div>
+
+      <form>
+        <div class="form">
+          <div class="esconde">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input class="nome" type="text" name="nome" id="nome" />
+            </div>
+            <div class="form-col-2">
+              <div class="form-group form-idade">
+                <label for="idade">Idade</label>
+                <input
+                  class="idade"
+                  type="number"
+                  name="idade"
+                  id="idade"
+                  min="0"
+                  max="100"
+                  step="1"
+                />
+              </div>
+              <div class="form-group form-sexo">
+                <label for="sexo">Sexo</label>
+                <select class="sexo" name="sexo" id="sexo">
+                  <option value="" disabled selected>Selecione o sexo</option>
+                  <option value="m" class="sexo">Masculino</option>
+                  <option value="f" class="sexo">Feminino</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-missao">
+              <label for="missao">Missão</label>
+              <select class="missao" name="missao" id="missao">
+                <option value="" disabled selected>Selecione a missão</option>
+                <option value="ol" class="missao">Missão Orlando</option>
+                <option value="ny" class="missao">Missão Nova Iorque</option>
+                <option value="sf" class="missao">Missão São Francisco</option>
+              </select>
+            </div>
+            <div class="form-col-2">
+              <div class="form-group form-hospedagem">
+                <label for="hospedagem">Hospedagem</label>
+                <select class="hospedagem" name="hospedagem" id="hospedagem">
+                  <option value="" disabled selected>Selecione a opção</option>
+                  <option value="individual" class="hospedagem">
+                    Individual
+                  </option>
+                  <option value="duplo" class="hospedagem">Duplo</option>
+                </select>
+              </div>
+              <div class="form-group form-curso">
+                <label for="curso">Tipo de Curso</label>
+                <select class="curso" name="curso" id="curso">
+                  <option value="" disabled selected>Selecione a opção</option>
+                  <option value="integral" class="curso">Integral</option>
+                  <option value="m-periodo" class="curso">Meio Período</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="resultado hidden">
+            <ul>
+              <li>Nome <span class="resultado-span"></span></li>
+              <li>Idade <span class="resultado-span"></span></li>
+              <li>Sexo <span class="resultado-span"></span></li>
+              <li>Missao <span class="resultado-span"></span></li>
+              <li>Hospedagem <span class="resultado-span"></span></li>
+              <li>Curso <span class="resultado-span"></span></li>
+              <li>Valor Total <span class="resultado-span"></span></li>
+            </ul>
+          </div>
+          <input class="btn" type="submit" value="Calcular valor" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
